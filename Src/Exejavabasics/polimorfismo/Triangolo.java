@@ -1,4 +1,4 @@
-package Exejavabasics.ereditarieta2;
+package Exejavabasics.polimorfismo;
 
 public class Triangolo extends Forma{
     private int base;

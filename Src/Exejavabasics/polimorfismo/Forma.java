@@ -1,4 +1,4 @@
-package Exejavabasics.ereditarieta2;
+package Exejavabasics.polimorfismo;
 
 public class Forma {
     public void calcolaArea() {
