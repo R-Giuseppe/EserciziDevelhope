@@ -1,17 +1,11 @@
 package Exejavabasics.classeAstratta;
 
 public abstract class Rettangolo extends Forma{
-    private int base;
-    private int altezza;
-
     public Rettangolo(int base, int altezza) {
-        this.base = base;
-        this.altezza = altezza;
+        super(TipoForma.RETTANGOLO, base, altezza);
     }
-
     @Override
     public void calcolaArea() {
-        int area = base * altezza;
-        System.out.println("L'area del rettangolo è: " + area);
+        System.out.println("L'area del rettangolo è: " + getBase() * getAltezza());
     }
 }

@@ -1,17 +1,11 @@
 package Exejavabasics.classeAstratta;
 
 public abstract class Triangolo extends Forma{
-    private int base;
-    private int altezza;
-
     public Triangolo(int base, int altezza) {
-        this.base = base;
-        this.altezza = altezza;
+        super(TipoForma.TRIANGOLO, base, altezza);
     }
-
     @Override
-    public void calcolaArea(){
-        System.out.println("Area del triangolo");
+    public void calcolaArea() {
+        System.out.println("L'area del triangolo è: " + (getBase() * getAltezza()) / 2);
     }
-
 }
