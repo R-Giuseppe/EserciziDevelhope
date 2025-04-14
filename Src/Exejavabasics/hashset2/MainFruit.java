@@ -12,15 +12,10 @@ public class MainFruit {
         for (String fruit : hashsetFruit.getStringHashSet()){
             System.out.println(fruit);
         }
-        for (String elementoCorrenteHashset : hashsetFruit.getStringHashSet()){
-            if (elementoCorrenteHashset.equals(frutto)){
-                System.out.println("Trovato");
-                break;
-            } else {
-                System.out.println("Non trovato");
-                break;
-            }
+        if (hashsetFruit.getStringHashSet().contains(frutto)) {
+            System.out.println("Trovato");
+        } else {
+            System.out.println("Non trovato");
         }
-
     }
 }
