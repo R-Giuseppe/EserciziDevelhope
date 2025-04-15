@@ -7,10 +7,10 @@ public class MainArraylist1 {
             int n = 5; // Numero di elementi da inserire
             ArrayList<String> list = new ArrayList<>();
 
-            // Popola l'ArrayList con degli elementi
-            for (int i = 1; i <= n; i++) {
-                list.add("Elemento " + i);
-            }
+            list.add("Studente1");
+            list.add("Studente2");
+            list.add("Studente3");
+            list.add("Studente4");
 
             // Stampa gli elementi
             System.out.println("Elementi nell'ArrayList:");
