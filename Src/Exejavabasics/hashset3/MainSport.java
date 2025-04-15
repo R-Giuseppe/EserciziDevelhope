@@ -1,4 +1,4 @@
-package hashset3;
+package Exejavabasics.hashset3;
 
 public class MainSport {
     public static void main(String[] args) {

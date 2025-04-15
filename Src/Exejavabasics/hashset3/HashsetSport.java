@@ -1,4 +1,4 @@
-package hashset3;
+package Exejavabasics.hashset3;
 
 import java.util.HashSet;
 
