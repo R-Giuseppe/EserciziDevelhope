@@ -1,7 +1,8 @@
-package date4;
+package Exejavabasics.date4;
 
 import java.time.OffsetDateTime;
-import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class MainDate4 {
     public static void main(String[] args) {
@@ -10,19 +11,21 @@ public class MainDate4 {
         System.out.println(dateTime);
 
         //aggiungi un anno
-        int nextYear = (dateTime.getYear() + 1);
+        OffsetDateTime nextYear = dateTime.plusYears(1);
         System.out.println(nextYear);
 
         //sottrai un mese
-        int pastMonth = dateTime.getMonthValue() - 1;
+        OffsetDateTime pastMonth = dateTime.minusMonths(1);
         System.out.println(pastMonth);
 
         //aggiungi 7 giorni
-        int addSevenDays = dateTime.getDayOfMonth() + 7;
+        OffsetDateTime addSevenDays = dateTime.plusDays(7);
         System.out.println(addSevenDays);
 
         //Stampa il risultato localizzata per l'Italia
-        System.out.println(dateTime.atZoneSimilarLocal(ZoneId.of("Europe/Rome")));
+        DateTimeFormatter formattedItaly = DateTimeFormatter.ofPattern("d MMMM yyyy HH:mm:ss").withLocale(Locale.ITALY);
+        System.out.println(formattedItaly);
 
+        System.out.println(dateTime);
     }
 }
