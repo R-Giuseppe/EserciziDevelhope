@@ -16,7 +16,7 @@ public class MainDate5 {
         String dateTime1String = dateTime1.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG));
         System.out.println("dateTime1String: " + dateTime1String);
 
-        String dateTime2String = dateTime1.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG));
+        String dateTime2String = dateTime2.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG));
         System.out.println("dateTime2String: " + dateTime2String);
 
         //Verificare che la prima data è precedente alla seconda
